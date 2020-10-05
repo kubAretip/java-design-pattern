@@ -1,4 +1,4 @@
-package pl.pitera.order;
+package pl.pitera.observer.order;
 
 public enum OrderStatus {
 

@@ -1,6 +1,6 @@
-package pl.pitera.notification;
+package pl.pitera.observer.notification;
 
-import pl.pitera.order.Order;
+import pl.pitera.observer.order.Order;
 
 public class TextMessage implements Observer {
 
