@@ -1,6 +1,6 @@
-package pl.pitera.observer.order;
+package pl.pitera.observer.example.order;
 
-import pl.pitera.observer.notification.Observer;
+import pl.pitera.observer.example.notification.Observer;
 
 import java.util.HashSet;
 import java.util.Set;

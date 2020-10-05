@@ -1,6 +1,6 @@
-package pl.pitera.observer.notification;
+package pl.pitera.observer.example.notification;
 
-import pl.pitera.observer.order.Order;
+import pl.pitera.observer.example.order.Order;
 
 public class Email implements Observer {
 

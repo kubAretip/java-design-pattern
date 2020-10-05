@@ -1,9 +1,9 @@
-package pl.pitera.homework;
+package pl.pitera.observer.homework;
 
-import pl.pitera.homework.news.InternetNews;
-import pl.pitera.homework.news.RadioNews;
-import pl.pitera.homework.news.TvNews;
-import pl.pitera.homework.weather.WeatherForecast;
+import pl.pitera.observer.homework.news.InternetNews;
+import pl.pitera.observer.homework.news.RadioNews;
+import pl.pitera.observer.homework.news.TvNews;
+import pl.pitera.observer.homework.weather.WeatherForecast;
 
 class Main {
 

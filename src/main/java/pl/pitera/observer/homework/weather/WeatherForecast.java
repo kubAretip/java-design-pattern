@@ -1,6 +1,6 @@
-package pl.pitera.homework.weather;
+package pl.pitera.observer.homework.weather;
 
-import pl.pitera.homework.news.Observer;
+import pl.pitera.observer.homework.news.Observer;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,6 +1,6 @@
-package pl.pitera.homework.news;
+package pl.pitera.observer.homework.news;
 
-import pl.pitera.homework.weather.WeatherForecast;
+import pl.pitera.observer.homework.weather.WeatherForecast;
 
 public class TvNews implements Observer {
     @Override

@@ -1,10 +1,10 @@
-package pl.pitera.observer;
+package pl.pitera.observer.example;
 
-import pl.pitera.observer.notification.Email;
-import pl.pitera.observer.notification.MobileApp;
-import pl.pitera.observer.notification.TextMessage;
-import pl.pitera.observer.order.Order;
-import pl.pitera.observer.order.OrderStatus;
+import pl.pitera.observer.example.notification.Email;
+import pl.pitera.observer.example.notification.MobileApp;
+import pl.pitera.observer.example.notification.TextMessage;
+import pl.pitera.observer.example.order.Order;
+import pl.pitera.observer.example.order.OrderStatus;
 
 public class Main {
 
