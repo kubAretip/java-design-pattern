@@ -1,4 +1,4 @@
-package pl.pitera.homework;
+package pl.pitera.singleton.homework;
 
 
 import java.util.Random;

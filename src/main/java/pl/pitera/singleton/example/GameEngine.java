@@ -1,4 +1,4 @@
-package pl.pitera.singleton;
+package pl.pitera.singleton.example;
 
 
 import java.io.Serializable;
