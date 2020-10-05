@@ -1,26 +1,22 @@
 package pl.pitera.homework;
 
-import pl.pitera.homework.news.InternetNews;
-import pl.pitera.homework.news.RadioNews;
-import pl.pitera.homework.news.TvNews;
-import pl.pitera.homework.weather.WeatherForecast;
-
 class Main {
 
     public static void main(String[] args) {
+        GuessGame game = GuessGame.getInstance();
 
-        WeatherForecast weatherForecast = new WeatherForecast(25, 1003);
-        RadioNews radioNews = new RadioNews();
-        InternetNews internetNews = new InternetNews();
-        TvNews tvNews = new TvNews();
-        weatherForecast.registerObserver(radioNews);
-        weatherForecast.registerObserver(internetNews);
-        weatherForecast.registerObserver(tvNews);
-        weatherForecast.notifyObservers();
-        weatherForecast.unregisterObserver(tvNews);
-        weatherForecast.unregisterObserver(radioNews);
-        System.out.println("Nowa prognoza - powiadomienie tylko dla serwisu internetowego:");
-        weatherForecast.updateForecast(18, 1007);
+        game.play();
+
+        int score = game.getScore();
+
+        GuessGame anotherGameReference = GuessGame.getInstance();
+
+        if(game == anotherGameReference  ) {
+            System.out.println("Singleton!");
+            if(score == anotherGameReference.getScore()) {
+                System.out.println("I punkty się zgadzają!");
+            }
+        }
     }
 
 }
