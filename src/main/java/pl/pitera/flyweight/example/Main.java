@@ -1,22 +1,28 @@
 package pl.pitera.flyweight.example;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class Main {
+
 
     public static void main(String[] args) {
 
-        List<Object> activeUnit = new ArrayList<>();
+        ContinentalDevice radio = () -> System.out.println("Gra muzyka");
+        ContinentalSocket continentalSocket = new ContinentalSocket();
+        continentalSocket.plugIn(radio);
 
 
-        for (int i = 0; i < 1000000; i++) {
-            activeUnit.add(new Rifleman(0, 0));
-            activeUnit.add(new Destroyer(0, 0));
-            activeUnit.add(new TeslaTank(0, 0));
+        UKDevice ukRadio = () -> System.out.println("Jazda jazda jazda !!");
+        UKSocket ukSocket = new UKSocket();
+        ukSocket.plugIn(ukRadio);
 
-        }
+        UkToContinentalAdapter adapter = new UkToContinentalAdapter(ukRadio);
+
+        continentalSocket.plugIn(adapter);
 
     }
+
+
+
+
+
 
 }
