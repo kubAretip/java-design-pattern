@@ -1,1 +1,1 @@
-# DECORATOR
+# Chain Of Responsibility
